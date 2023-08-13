@@ -11,6 +11,9 @@ edition = "2021"
 
 [dependencies]
 ed25519-dalek = { version = "1.0.1", features = ["nightly"] }
+curve25519-dalek = { version = "^3", default_features = false, features = ["alloc", "u64_backend"] }
+blake3 = { version = "^1" }
+generic-array = "^0"
 rand = "0.6.5"
 
 [lib]
